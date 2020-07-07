@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDescriptionFragment">
+
+    <TextView
+        android:id="@+id/tv_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit armet,eu diam scripta facilis usu.Vim erat persequeris concludaturque an,usu vidit nominati complectitur ex.Pri mundi albuoius elaboraret id. Cu namomnium audire necessitatibus.
+
+ On entend par produits artisanaux les produits fabriqués par des artisans, soit entièrement à la main, soit à l'aide d'outils à main ou même de moyens mécaniques, pourvu que la contribution manuelle directe de l'artisan"
+        android:layout_margin="16dp"
+        android:textColor="#000000"/>
+</FrameLayout>

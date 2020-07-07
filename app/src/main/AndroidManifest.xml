@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mymall">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_round_icon"
+        android:label="My Mall"
+        android:roundIcon="@mipmap/app_round_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"  />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity android:name=".CategoryActivity"   />
+        <activity android:name=".ProductDetailsActivity" />
+        <activity android:name=".OrderDetailsActivity" />
+        <activity android:name=".DeliveryActivity" />
+        <activity
+            android:name=".AddAddressActivity"
+            android:theme="@style/RedProgressbar" />
+        <activity android:name=".MyAddressesActivity" />
+        <activity android:name=".ViewAllActivity"></activity>
+    </application>
+
+</manifest>
